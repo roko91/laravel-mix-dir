@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/roko91/laravel-mix-dir/issues"
   },
-  "homepage": "https://github.com/roko91/laravel-mix-dir#readme"
+  "homepage": "https://github.com/roko91/laravel-mix-dir#readme",
+  "dependencies": {
+    "laravel-mix": "^6.0.10"
+  }
 }
