@@ -2,7 +2,6 @@ const mix = require('laravel-mix');
 const fs = require('fs');
 const path = require('path');
 const webpack = require('webpack');
-const ignoredFiles = ['resources/js/client/app.js', 'resources/js/admin/app.js'];
 
 mix.vue().webpackConfig({'plugins': [
   new webpack.IgnorePlugin({
@@ -11,7 +10,7 @@ mix.vue().webpackConfig({'plugins': [
   })
 ]});
 
-const mixDir = (method, source, output) => {
+const mixDir = (method, source, output, ignoredFiles = []) => {
   source += (source.slice(-1) === '/' ? '' : '/');
   output += (output.slice(-1) === '/' ? '' : '/');
   fs.readdirSync(source).forEach(file => {
