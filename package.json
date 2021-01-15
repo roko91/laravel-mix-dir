@@ -1,0 +1,25 @@
+{
+  "name": "laravel-mix-dir",
+  "version": "1.0.0",
+  "description": "Uses Laravel Mix to compile all assets in the selected directory recursively.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roko91/laravel-mix-dir.git"
+  },
+  "keywords": [
+    "laravel",
+    "webpack",
+    "mix",
+    "dir"
+  ],
+  "author": "Rosen Dimitrov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roko91/laravel-mix-dir/issues"
+  },
+  "homepage": "https://github.com/roko91/laravel-mix-dir#readme"
+}
