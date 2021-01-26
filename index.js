@@ -28,4 +28,7 @@ const mixDir = (method, source, output, ignoredFiles = []) => {
   });
 };
 
-module.exports = mixDir;
+module.exports = {
+  mix,
+  mixDir
+};
