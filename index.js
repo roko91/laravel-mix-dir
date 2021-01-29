@@ -22,7 +22,11 @@ const mixDir = (method, source, output, ignoredFiles = []) => {
       if (file.split('.').pop().trim() === 'json') {
         mix.copy(sourcePath, output);
       } else if (!source.endsWith('/lib/')) {
-        mix[method](sourcePath, output);
+        let outputPath = output + file;
+        const extName = path.extname(outputPath);
+        if (extName !== '.vue') {
+            mix[method](sourcePath, output);
+        }
       }
     }
   });
